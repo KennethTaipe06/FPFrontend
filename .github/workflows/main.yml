@@ -45,6 +45,7 @@ jobs:
             type=raw,value=latest
 
       - name: Scan for vulnerabilities
+      
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'byvoxel/fpfrontend:latest'
