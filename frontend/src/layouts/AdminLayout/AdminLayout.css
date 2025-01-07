@@ -1,0 +1,24 @@
+.admin-layout {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 55px auto; /* Primera fila fija para el menú, segunda fila flexible */
+    grid-template-columns: 1fr;    /* Una sola columna */
+    grid-template-areas: 
+        "menu"
+        "content";
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.admin-layout__menu {
+    grid-area: menu; /* Define que este elemento está en el área "menu" */
+    
+    z-index: 10; /* Asegura que se superponga si es necesario */
+}
+
+.admin-layout__main-content {
+    grid-area: content; /* Define que este elemento está en el área "content" */
+    padding: 20px;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es más grande */
+    background-color: #f9f9f9; /* Fondo claro para diferenciar el contenido */
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+}

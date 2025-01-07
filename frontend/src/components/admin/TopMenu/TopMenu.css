@@ -1,0 +1,32 @@
+.top-menu-admin {
+    background-color: #2185d0; /* Azul */
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    color: white !important;
+  }
+  
+  .top-menu-admin__logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white !important;
+  }
+  
+  .top-menu-admin .menu .item {
+    color: white !important;
+    font-size: 1em;
+    display: flex; /* Asegura alineación horizontal */
+    align-items: center;
+  }
+  
+  .top-menu-admin .menu .item span {
+    margin-left: 5px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .top-menu-admin .menu .item:hover {
+    background-color: #1678c2 !important; /* Color al pasar el mouse */
+  }
+  .body-content {
+    margin-top: 50px; /* Ajusta según la altura real del menú */
+  }
+  
+  
